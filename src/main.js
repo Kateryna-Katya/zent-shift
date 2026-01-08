@@ -22,9 +22,9 @@ requestAnimationFrame(raf);
 new hoverEffect({
     parent: document.querySelector('#hero-webgl'),
     intensity: 0.4,            // Сила искажения (можно менять от 0.1 до 1.0)
-    image1: 'img/one.jpg',     // Исходное фото
-    image2: 'img/two.jpg',     // Фото при наведении
-    displacementImage: 'img/three.jpg', // Карта искажения (текстура шума/жидкости)
+    image1: '/src/img/one.jpg',     // Исходное фото
+    image2: '/src/img/two.jpg',     // Фото при наведении
+    displacementImage: '/src/img/three.jpg', // Карта искажения (текстура шума/жидкости)
     imagesRatio: 650 / 600,    // Соотношение сторон вашего контейнера
     speedIn: 1.5,              // Скорость появления
     speedOut: 1.2              // Скорость исчезновения
