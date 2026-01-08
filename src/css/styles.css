@@ -1083,3 +1083,98 @@ a {
         display: flex;
     }
 }
+/* ================= LEGAL PAGES STYLES ================= */
+.pages {
+    padding: 160px 0 100px;
+    /* Большой отступ сверху под хедер */
+    background-color: var(--bg);
+}
+
+.pages .container {
+    max-width: 800px;
+    /* Ограничиваем ширину для удобства чтения текста */
+}
+
+.pages h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--text);
+}
+
+.pages h2 {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+}
+
+.pages p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 24px;
+}
+
+.pages ul,
+.pages ol {
+    margin-bottom: 32px;
+    padding-left: 20px;
+}
+
+.pages li {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    color: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+/* Кастомные буллиты в стиле сайта */
+.pages ul li::before {
+    content: "—";
+    position: absolute;
+    left: -20px;
+    color: var(--text);
+}
+
+.pages a {
+    color: var(--text);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.pages a:hover {
+    opacity: 0.6;
+}
+
+.pages strong {
+    font-weight: 700;
+    color: var(--text);
+}
+
+/* Адаптив для страниц */
+@media (max-width: 768px) {
+    .pages {
+        padding-top: 100px;
+    }
+
+    .pages h1 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .pages h2 {
+        font-size: 20px;
+    }
+}
