@@ -24,7 +24,7 @@ new hoverEffect({
     intensity: 0.4,            // Сила искажения (можно менять от 0.1 до 1.0)
     image1: '/src/img/one.jpg',     // Исходное фото
     image2: '../src/img/two.jpg',     // Фото при наведении
-    displacementImage: './src/public/three.jpg', // Карта искажения (текстура шума/жидкости)
+    displacementImage: '/public/three.jpg', // Карта искажения (текстура шума/жидкости)
     imagesRatio: 650 / 600,    // Соотношение сторон вашего контейнера
     speedIn: 1.5,              // Скорость появления
     speedOut: 1.2              // Скорость исчезновения
