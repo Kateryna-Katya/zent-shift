@@ -1,3 +1,7 @@
+
+import imgOne from '/img/one.jpg';
+import imgTwo from '/img/two.jpg';
+import imgThree from '/img/three.jpg';
 // Init AOS (Animate On Scroll)
 AOS.init({
     duration: 800,
@@ -22,9 +26,9 @@ requestAnimationFrame(raf);
 new hoverEffect({
     parent: document.querySelector('#hero-webgl'),
     intensity: 0.4,            // Сила искажения (можно менять от 0.1 до 1.0)
-image1: '/zent-shift/one.jpg',            
-    image2: '/zent-shift/two.jpg',            
-    displacementImage: '/zent-shift/three.jpg',// Карта искажения (текстура шума/жидкости)
+image1: imgOne,            // Используем переменную вместо строки
+    image2: imgTwo,            
+    displacementImage: imgThree,// Карта искажения (текстура шума/жидкости)
     imagesRatio: 650 / 600,    // Соотношение сторон вашего контейнера
     speedIn: 1.5,              // Скорость появления
     speedOut: 1.2              // Скорость исчезновения
