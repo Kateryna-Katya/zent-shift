@@ -23,8 +23,8 @@ new hoverEffect({
     parent: document.querySelector('#hero-webgl'),
     intensity: 0.4,            // Сила искажения (можно менять от 0.1 до 1.0)
 image1: '/zent-shift/one.jpg',            
-    image2: '/two.jpg',            
-    displacementImage: '/zent-shift/img/three.jpg',// Карта искажения (текстура шума/жидкости)
+    image2: '/zent-shift/two.jpg',            
+    displacementImage: '/zent-shift/three.jpg',// Карта искажения (текстура шума/жидкости)
     imagesRatio: 650 / 600,    // Соотношение сторон вашего контейнера
     speedIn: 1.5,              // Скорость появления
     speedOut: 1.2              // Скорость исчезновения
